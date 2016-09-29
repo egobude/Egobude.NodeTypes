@@ -1,0 +1,52 @@
+'Egobude.NodeTypes:PaddingMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        padding:
+          label: 'Padding'
+          icon: 'icon-file'
+          position: 400
+  properties:
+    paddingTop:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Padding Top
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'padding'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'padding-top-xs':
+                label: 'Padding-xs'
+              'padding-top-sm':
+                label: 'Padding-sm'
+              'padding-top-lg':
+                label: 'Padding-md'
+              'padding-top-lg':
+                label: 'Padding-lg'
+    paddingBottom:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Padding Bottom
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'padding'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'padding-bottom-xs':
+                label: 'Padding-xs'
+              'padding-bottom-sm':
+                label: 'Padding-sm'
+              'padding-bottom-lg':
+                label: 'Padding-md'
+              'padding-bottom-lg':
+                label: 'Padding-lg'

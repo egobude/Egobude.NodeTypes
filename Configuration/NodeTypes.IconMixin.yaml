@@ -1,0 +1,72 @@
+'Egobude.NodeTypes:IconMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        icon:
+          label: 'Icon'
+          icon: 'icon-file'
+          position: 500
+  properties:
+    border:
+      type: boolean
+      defaultValue: FALSE
+      ui:
+        label: 'Border'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'icon'
+    icon:
+      type: string
+      defaultValue: 'fa-file'
+      ui:
+        label: 'Icon'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'icon'
+    rotate:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Rotate
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'icon'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'fa-rotate-90':
+                label: 'fa-rotate-90'
+              'fa-rotate-180':
+                label: 'fa-rotate-180'
+              'fa-rotate-270':
+                label: 'fa-rotate-270'
+              'fa-flip-horizontal':
+                label: 'fa-flip-horizontal'
+              'fa-flip-vertical':
+                label: 'fa-flip-vertical'
+    size:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Size
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'icon'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'Normal'
+              'fa-lg':
+                label: 'fa-lg'
+              'fa-2x':
+                label: 'fa-2x'
+              'fa-3x':
+                label: 'fa-3x'
+              'fa-4x':
+                label: 'fa-4x'
+              'fa-5x':
+                label: 'fa-5x'

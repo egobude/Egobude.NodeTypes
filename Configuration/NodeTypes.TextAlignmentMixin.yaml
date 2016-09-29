@@ -1,0 +1,33 @@
+'Egobude.NodeTypes:TextAlignmentMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        alignment:
+          label: 'Textausrichtung'
+          icon: 'icon-file'
+          position: 400
+  properties:
+    alignment:
+      type: string
+      defaultValue: ~
+      ui:
+        label: 'Textausrichtung'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'alignment'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          defaultValue: 'links'
+          editorOptions:
+            placeholder: 'Bitte auswählen'
+            values:
+              ~:
+                label: 'None'
+              text-center:
+                label: 'zentriert'
+              'text-left':
+                label: 'links'
+              text-right:
+                label: 'rechts'
+              text-justify:
+                label: 'bündig ausgerichtet'

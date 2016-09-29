@@ -1,0 +1,23 @@
+'Egobude.NodeTypes:Button':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'Egobude.NodeTypes:PaddingMixin': TRUE
+    'Egobude.NodeTypes:IconMixin': TRUE
+    'Egobude.NodeTypes:LinkMixin': TRUE
+  ui:
+    label: 'Button'
+    icon: 'icon-file'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'Egobude.NodeTypes'
+  properties:
+    text:
+      type: string
+      defaultValue: 'Lorem ipsum dolor sit amet ...'
+      ui:
+        label: 'Inhalt'
+        inlineEditable: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'

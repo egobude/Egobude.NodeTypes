@@ -1,0 +1,4 @@
+prototype(Egobude.NodeTypes:Jumbotron) < prototype(TYPO3.Neos:Content) {
+	image = ${q(node).property('image')}
+	attributes.class = ${'jumbotron jumbotron-' + q(node).property('color') + ' ' + q(node).property('paddingTop') + ' ' + q(node).property('paddingBottom') + ' ' + q(node).property('marginBottom') + ' ' + q(node).property('marginTop') + ' ' + q(node).property('alignment')}
+}

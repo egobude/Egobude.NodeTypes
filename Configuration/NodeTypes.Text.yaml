@@ -1,0 +1,20 @@
+'Egobude.NodeTypes:Text':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'Egobude.NodeTypes:PaddingMixin': TRUE
+    'Egobude.NodeTypes:TextAlignmentMixin': TRUE
+  ui:
+    label: 'Text'
+    icon: 'icon-bold'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'Einstellungen'
+  properties:
+    text:
+      type: string
+      defaultValue: 'Lorem ipsum dolor sit amet ...'
+      ui:
+        label: 'Inhalt'
+        inlineEditable: TRUE

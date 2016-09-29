@@ -1,0 +1,9 @@
+'Egobude.NodeTypes:SettingsMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        settings:
+          label: 'Settings'
+          icon: icon-cog
+          position: 50

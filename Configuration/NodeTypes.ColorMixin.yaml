@@ -1,0 +1,27 @@
+'Egobude.NodeTypes:ColorMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        color:
+          label: 'Color'
+          icon: 'icon-file'
+          position: 500
+  properties:
+    color:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Color
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'color'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'white':
+                label: 'White'
+              'black':
+                label: 'Black'

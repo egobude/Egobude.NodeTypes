@@ -1,0 +1,11 @@
+'Egobude.NodeTypes:Separator':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: 'Separator'
+    icon: 'icon-file'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'Egobude.NodeTypes'

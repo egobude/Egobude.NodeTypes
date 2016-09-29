@@ -1,0 +1,14 @@
+'Egobude.NodeTypes:LinkMixin':
+  abstract: TRUE
+  superTypes:
+    'Egobude.NodeTypes:SettingsMixin': TRUE
+  properties:
+    link:
+      type: string
+      ui:
+        label: 'Link'
+        reloadIfChanged: TRUE
+        inspector:
+          position: 400
+          group: settings
+          editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'

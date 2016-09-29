@@ -1,0 +1,51 @@
+'Egobude.NodeTypes:MarginMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        margin:
+          label: 'Margin'
+          icon: 'icon-file'
+          position: 400
+  properties:
+    marginTop:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Margin Top
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'margin'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'margin-top-xs':
+                label: 'margin-xs'
+              'margin-top-sm':
+                label: 'margin-sm'
+              'margin-top-lg':
+                label: 'margin-md'
+              'margin-top-lg':
+                label: 'margin-lg'
+    marginBottom:
+      type: string
+      defaultValue: ~
+      ui:
+        label: Margin Bottom
+        inspector:
+          group: 'margin'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'margin-bottom-xs':
+                label: 'margin-xs'
+              'margin-bottom-sm':
+                label: 'margin-sm'
+              'margin-bottom-lg':
+                label: 'margin-md'
+              'margin-bottom-lg':
+                label: 'margin-lg'

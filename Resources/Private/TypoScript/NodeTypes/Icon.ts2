@@ -1,0 +1,3 @@
+prototype(Egobude.NodeTypes:Icon) < prototype(TYPO3.Neos:Content) {
+	attributes.class = ${q(node).property('alignment') + ' ' + q(node).property('color') + ' ' + q(node).property('paddingTop') + ' ' + q(node).property('paddingBottom') + '' + q(node).property('animate') ? 'has-animate' : null}
+}

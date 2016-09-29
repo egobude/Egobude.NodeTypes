@@ -1,0 +1,68 @@
+'Egobude.NodeTypes:AbstractHeadline':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  abstract: TRUE
+  ui:
+    icon: 'icon-header'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'egobudeNodeTypes'
+  properties:
+    title:
+      type: string
+      defaultValue: 'Enter headline here'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'format':
+            'p': FALSE
+            'h1': FALSE
+            'h2': FALSE
+            'h3': FALSE
+            'removeFormat': TRUE
+          'link':
+            'a': FALSE
+
+'Egobude.NodeTypes:Headline1':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H1)'
+    position: 100
+
+'Egobude.NodeTypes:Headline2':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H2)'
+    position: 200
+
+'Egobude.NodeTypes:Headline3':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H3)'
+    position: 300
+
+'Egobude.NodeTypes:Headline4':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H4)'
+    position: 400
+
+'Egobude.NodeTypes:Headline5':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H5)'
+    position: 500
+
+'Egobude.NodeTypes:Headline6':
+  superTypes:
+    'Egobude.NodeTypes:AbstractHeadline': TRUE
+  ui:
+    label: 'Headline (H6)'
+    position: 600

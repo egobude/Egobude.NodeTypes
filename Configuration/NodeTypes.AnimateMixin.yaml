@@ -1,0 +1,80 @@
+'Egobude.Animate:AnimateMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        animate:
+          label: 'Animate'
+          icon: 'icon-file'
+          position: 500
+  properties:
+    animate:
+      type: string
+      ui:
+        label: 'Animation type'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'animate'
+          position: 30
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: 'None'
+            allowEmpty: TRUE
+            values:
+              slideUp:
+                label: 'Slide Up'
+                group: 'Sliding Entrances'
+              slideLeft:
+                label: 'Slide In From Left'
+                group: 'Sliding Entrances'
+              slideRight:
+                label: 'Slide In From Right'
+                group: 'Sliding Entrances'
+              slideDown:
+                label: 'Slide In Up'
+                group: 'Sliding Entrances'
+              slideExpandUp:
+                label: 'Slide Expand Up'
+                group: 'Sliding Entrances'
+              expandOpen:
+                label: 'Expand Open'
+                group: 'Expand'
+              expandUp:
+                label: 'Expand Up'
+                group: 'Expand'
+              pullUp:
+                label: 'Pull Up'
+                group: 'Pull Entrances'
+              pullDown:
+                label: 'Pull Down'
+                group: 'Pull Entrances'
+              stretchLeft:
+                label: 'Stretch In From Left'
+                group: 'Stretch Entrances'
+              stretchRight:
+                label: 'Stretch In From Right'
+                group: 'Stretch Entrances'
+              bounce:
+                label: 'Bounce'
+                group: 'Misc Attention Seekers'
+              pulse:
+                label: 'Pulse'
+                group: 'Misc Attention Seekers'
+              bigEntrance:
+                label: 'Big Entrance'
+                group: 'Misc Attention Seekers'
+              fadeIn:
+                label: 'Fade In'
+                group: 'Misc Fading Entrances'
+              hatch:
+                label: 'Hatch'
+                group: 'Misc Attention Seekers'
+              hatch:
+                label: 'Hatch'
+                group: 'Misc Attention Seekers'
+              floating:
+                label: 'Floating'
+                group: 'Misc Attention Seekers'
+              tossing:
+                label: 'Tossing'
+                group: 'Misc Attention Seekers'

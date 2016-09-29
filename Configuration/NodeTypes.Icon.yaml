@@ -1,0 +1,16 @@
+'Egobude.NodeTypes:Icon':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'Egobude.NodeTypes:PaddingMixin': TRUE
+    'Egobude.NodeTypes:TextAlignmentMixin': TRUE
+    'Egobude.NodeTypes:IconMixin': TRUE
+    'Egobude.NodeTypes:ColorMixin': TRUE
+    'Egobude.Animate:AnimateMixin': TRUE
+  ui:
+    label: 'Icon'
+    icon: 'icon-file'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'egobudeNodeTypes'

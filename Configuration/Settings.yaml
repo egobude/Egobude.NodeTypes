@@ -1,0 +1,16 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Egobude.NodeTypes': TRUE
+    nodeTypes:
+      groups:
+        general:
+          position: 1
+        structure:
+          position: 2
+        egobudeNodeTypes:
+          label: 'Egobude NodeTypes'
+          position: 3
+        plugins:
+          position: 4

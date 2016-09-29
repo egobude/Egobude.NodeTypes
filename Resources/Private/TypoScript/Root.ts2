@@ -1,0 +1,2 @@
+// Include TypoScript
+include: NodeTypes/*.ts2

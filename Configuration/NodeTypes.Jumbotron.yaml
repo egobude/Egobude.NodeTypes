@@ -1,0 +1,43 @@
+'Egobude.NodeTypes:Jumbotron':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'Egobude.NodeTypes:ColorMixin': TRUE
+    'Egobude.NodeTypes:PaddingMixin': TRUE
+    'Egobude.NodeTypes:MarginMixin': TRUE
+    'Egobude.NodeTypes:TextAlignmentMixin': TRUE
+  ui:
+    label: 'Jumbotron'
+    icon: 'icon-file'
+    group: 'egobudeNodeTypes'
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'Egobude.NodeTypes'
+  properties:
+    headline:
+      type: string
+      defaultValue: 'Lorem ipsum dolor sit amet ...'
+      ui:
+        label: 'Headline'
+        inlineEditable: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'
+    text:
+      type: string
+      defaultValue: 'Lorem ipsum dolor sit amet ...'
+      ui:
+        label: 'Text'
+        inlineEditable: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'
+    image:
+      type: 'TYPO3\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Bild'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'
+          editorOptions:
+            features:
+              crop: TRUE
+              resize: TRUE

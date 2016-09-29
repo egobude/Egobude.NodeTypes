@@ -1,0 +1,3 @@
+prototype(Egobude.NodeTypes:Text) < prototype(TYPO3.Neos:Content) {
+	attributes.class = ${q(node).property('alignment') + ' ' + q(node).property('paddingTop') + ' ' + q(node).property('paddingBottom')}
+}

@@ -1,0 +1,55 @@
+'Egobude.NodeTypes:Section':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    'content':
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Section'
+    icon: 'icon-file'
+    group: 'egobudeNodeTypes'
+    position: 100
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        egobudeNodeTypes:
+          label: 'egobudeNodeTypes'
+  properties:
+    textOrientation:
+      type: string
+      ui:
+        label: 'Textausrichtung'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'text-left'
+            values:
+              'text-center':
+                label: 'Zentriert'
+              'text-left':
+                label: 'Links'
+              'text-right':
+                label: 'Rechts'
+    backgroundColor:
+      type: string
+      ui:
+        label: 'Hintergrundfarbe'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'egobudeNodeTypes'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: ''
+            values:
+              '':
+                label: 'Kein Hintergrund'
+              'blue':
+                label: 'Blau'
+              'green':
+                label: 'Grün'
+              'brown':
+                label: 'Braun'
+              'dark-grey':
+                label: 'Dunkelrau'

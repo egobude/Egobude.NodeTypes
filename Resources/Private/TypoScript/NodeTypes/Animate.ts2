@@ -1,0 +1,6 @@
+prototype(TYPO3.Neos:Content) {
+	attributes = TYPO3.TypoScript:Attributes {
+		class.hasAnimateClass = ${q(node).property('animate') ? 'has-animate' : null}
+		data-animate = ${q(node).property('animate')}
+	}
+}
