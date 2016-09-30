@@ -1,0 +1,4 @@
+prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+	attributes.class = 'row'
+	columns.iterationName = 'multiColumnIteration'
+}
