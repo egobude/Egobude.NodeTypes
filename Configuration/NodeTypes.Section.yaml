@@ -2,7 +2,7 @@
   superTypes:
     'TYPO3.Neos:Content': TRUE
   childNodes:
-    'content':
+    'sectionContent':
       type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Section'

@@ -1,0 +1,8 @@
+prototype(Egobude.NodeTypes:Section) {
+	sectionContent = TYPO3.Neos:ContentCollection {
+		nodePath = 'sectionContent'
+	}
+}
+prototype(Egobude.NodeTypes:Section) < prototype(TYPO3.Neos:Content) {
+	attributes.class = ${'content-section jumbotron content-section-' + q(node).property('backgroundColor') + ' ' +  q(node).property('textOrientation')}
+}
