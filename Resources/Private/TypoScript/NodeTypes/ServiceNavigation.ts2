@@ -1,0 +1,19 @@
+prototype(Egobude.NodeTypes:ServiceNavigation) < prototype(TYPO3.TypoScript:Template) {
+    templatePath = 'resource://Egobude.NodeTypes/Private/TypoScript/NodeTypes/ServiceNavigation.html'
+
+    title = 'Services navigation'
+
+    nav = Menu {
+        startingPoint = ${q(site).find(Configuration.setting('Egobude.NodeTypes.navigation.service.startingPoint')).get(0)}
+
+        active.attributes {
+            class = null
+        }
+        current.attributes {
+            class = null
+        }
+        normal.attributes {
+            class = null
+        }
+    }
+}

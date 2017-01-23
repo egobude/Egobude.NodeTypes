@@ -14,3 +14,9 @@ TYPO3:
           position: 3
         plugins:
           position: 4
+
+Egobude:
+  NodeTypes:
+    navigation:
+      service:
+        startingPoint: '#2fd36673-3444-449e-9520-1def7d536e17'

@@ -1,0 +1,21 @@
+prototype(Egobude.NodeTypes:Logo) < prototype(TYPO3.TypoScript:Template) {
+    templatePath = 'resource://Egobude.NodeTypes/Private/TypoScript/NodeTypes/Logo.html'
+    attributes = TYPO3.TypoScript:Attributes {
+        class = 'logo'
+    }
+
+    targetNode = ${site}
+    logoSrc = ''
+    @context.logoSrc = ${this.logoSrc}
+
+    logo = TYPO3.TypoScript:Tag {
+        tagName = 'img'
+        attributes {
+            alt = 'Logo'
+            src = TYPO3.TypoScript:ResourceUri {
+                resource = ${logoSrc}
+            }
+        }
+    }
+    @if.isNotBlank = ${logoSrc != null}
+}

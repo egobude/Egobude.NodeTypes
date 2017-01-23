@@ -1,0 +1,8 @@
+prototype(Egobude.NodeTypes:Contact) < prototype(TYPO3.TypoScript:Template) {
+    templatePath = 'resource://Egobude.NodeTypes/Private/TypoScript/NodeTypes/Contact.html'
+
+    attributes = TYPO3.TypoScript:Attributes {
+        class = 'contact list-inline pull-right'
+        role = 'navigation'
+    }
+}

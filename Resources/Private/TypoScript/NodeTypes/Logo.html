@@ -1,0 +1,8 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<span{attributes -> f:format.raw()}>
+    <neos:link.node node="{targetNode}">
+        {logo -> f:format.raw()}
+    </neos:link.node>
+</span>

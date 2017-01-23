@@ -1,0 +1,27 @@
+prototype(Egobude.NodeTypes:Breadcrumb) < prototype(TYPO3.TypoScript:Template) {
+    templatePath = 'resource://Egobude.NodeTypes/Private/TypoScript/NodeTypes/Breadcrumb.html'
+
+    title = 'Breadcrumbs'
+
+    nav = BreadcrumbMenu {
+        templatePath = 'resource://Egobude.NodeTypes/Private/TypoScript/NodeTypes/BreadcrumbMenu.html'
+
+        attributes {
+            class = 'breadcrumb'
+            role = 'navigation'
+            aria-labelledby = 'br1'
+        }
+
+        active.attributes {
+            class = null
+        }
+        current.attributes {
+            class = null
+        }
+        normal.attributes {
+            class = null
+        }
+    }
+
+    @if.checkDepth = ${documentNode.nodeData.depth > 2}
+}
